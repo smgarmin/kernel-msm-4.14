@@ -9289,7 +9289,7 @@ static int qseecom_probe(struct platform_device *pdev)
 						UNLOAD_APP_KT_SLEEP);
 
 	if (!qseecom.qsee_perf_client)
-		pr_err("Unable to register bus client\n");
+		pr_dbg("Unable to register bus client\n");
 
 	atomic_set(&qseecom.qseecom_state, QSEECOM_STATE_READY);
 	return 0;
